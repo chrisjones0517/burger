@@ -5,7 +5,7 @@
                 {{#each burgers}}
                 {{#unless this.devoured}}
                 <div class="listItem p-2">
-                    <form class="devourForm" action="/index{{this.id}}?_method=PUT" method="POST">
+                    <form class="devourForm" action="/{{this.id}}?_method=PUT" method="POST">
                         <span class="available">{{this.id}}. {{this.burger_name}}</span>
                         <button type="submit" class="btn btn-primary btn-sm float-right">DEVOUR IT</button>
                     </form>

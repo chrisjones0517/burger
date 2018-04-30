@@ -2,7 +2,7 @@ const express = require('express');
 const burger = require('../models/burger.js');
 const router = express.Router();
 
-router.get('/index', (req, res) => {
+router.get('/', (req, res) => {
     burger.selectAll(function (data) {
         let dataObject = {
             burgers: data
@@ -16,14 +16,14 @@ router.get('/index', (req, res) => {
     });
 });
 
-router.post('/index', (req, res) => {
+router.post('/', (req, res) => {
     burger.insertOne(req.body.burgerInput);
-    res.redirect('/index');
+    res.redirect('/');
 });
 
-router.put('/index:id', (req, res) => {
+router.put('/:id', (req, res) => {
     burger.updateOne(req.params.id);
-    res.redirect('/index');
+    res.redirect('/');
 });
 
 module.exports = router;
