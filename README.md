@@ -8,4 +8,5 @@ The user is instructed to enter a burger name and then click "Submit" to add it 
 The demo link can be accessed by clicking [here](https://chrisjones-eat-da-burger.herokuapp.com/).
 ## Installation
 To run the application locally, first clone this repository with the following command:
-```git clone
+```
+git clone
