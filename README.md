@@ -33,3 +33,5 @@ Finally, run the node server locally:
 node server.js
 ```
 The view should now be available in your browser at the URL: ```http://localhost:3000```.
+
+**Have fun!**
