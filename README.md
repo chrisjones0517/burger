@@ -7,6 +7,16 @@ The user is instructed to enter a burger name and then click "Submit" to add it 
 ## Demo
 The demo link can be accessed by clicking [here](https://chrisjones-eat-da-burger.herokuapp.com/).
 ## Installation
+Note: you must have mySQL installed in order to run this application.
 To run the application locally, first clone this repository with the following command:
 ```
-git clone
+git clone https://github.com/chrisjones0517/burger.git
+```
+Next, navigate to the burger folder and install the application dependencies:
+```
+npm install
+```
+Finally, run the node server locally:
+```
+node server.js
+```
