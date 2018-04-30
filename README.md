@@ -17,7 +17,7 @@ Next, navigate to the burger folder and install the application dependencies:
 ```
 npm install
 ```
-Then, populate the connection.js file with your local mySQL setting information:
+Next, populate the connection.js file with your local mySQL setting information:
 ```
 const connection = mysql.createConnection({
     host: yourHost,
@@ -26,6 +26,8 @@ const connection = mysql.createConnection({
     (you will add a [database: yourDatabase] after setup)
 });
 ```
+Then, run the schema.sql file from the command line using your installed mySQL Server. Alternatively, you can copy the commands from the file to run in your mySQL GUI, such as mySQL Workbench.  
+
 Finally, run the node server locally:
 ```
 node server.js
